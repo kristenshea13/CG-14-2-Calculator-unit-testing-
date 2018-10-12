@@ -2,11 +2,11 @@
 
 namespace CG_14_2__Calculator_unit_testing_
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            //Update your calculator app with a unit testing project.Create tests that send 
+            //Update your calculator app with a unit testing project.Create tests that send
             //in valid input and tests that send in bad input.
 
             //explain program, prompt user for equation, give example for correct format.
@@ -27,14 +27,10 @@ namespace CG_14_2__Calculator_unit_testing_
             }
             catch (Exception ex)
             {
-
                 Console.WriteLine(ex.Message);
             }
-            
-
 
             Console.ReadLine();
-
         }
     }
 }

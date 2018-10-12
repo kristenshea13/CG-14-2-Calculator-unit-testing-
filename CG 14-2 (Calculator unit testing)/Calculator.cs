@@ -38,8 +38,8 @@ namespace CG_14_2__Calculator_unit_testing_
             //when user inputs equation incorrectly, it will tell them the equation is invalid.
             catch (Exception ex)
             {
-                Console.WriteLine("Invalid equation.");
-                Console.WriteLine(ex.Message);
+                throw new Exception("Invalid equation.", ex);
+
             }
 
 

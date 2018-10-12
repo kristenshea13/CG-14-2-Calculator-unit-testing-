@@ -17,10 +17,20 @@ namespace CG_14_2__Calculator_unit_testing_
             string equation = Console.ReadLine();
 
             //create new instance of calculator class using equation string as input.
-            Calculator calculator = new Calculator(equation);
 
-            //initiate method from calculator class to calculate equation and print to console
-            Console.WriteLine("Answer: {0}", calculator.Calculate());
+            try
+            {
+                Calculator calculator = new Calculator(equation);
+
+                //initiate method from calculator class to calculate equation and print to console
+                Console.WriteLine("Answer: {0}", calculator.Calculate());
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+            }
+            
 
 
             Console.ReadLine();

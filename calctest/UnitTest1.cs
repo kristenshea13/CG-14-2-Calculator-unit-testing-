@@ -32,7 +32,29 @@ namespace calctest
         }
 
 
+        [Fact]
+        public void Calculate_Gibberish_ThrowsException()
+        {
+            string equation = "7#3";
+            
+            try
+            {
+                new Calculator(equation);
+
+            }
+            catch (Exception ex)
+            {
+
+                Assert.Equal("Invalid equation.", ex.Message);
+                return;
+            }
+
+            Assert.True(false);
+
+        }
+
         //do for multiply, subtract, divide
+       
 
 
 

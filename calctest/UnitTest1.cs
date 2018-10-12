@@ -6,9 +6,7 @@ namespace calctest
 {
     public class UnitTest1
     {
-        [Fact]
-        public void Test1()
-        {
+        
 
             //[fact] for every method in test project
             //should follow the three A's (AAA)
@@ -25,18 +23,20 @@ namespace calctest
             Calculator calculator = new Calculator(equation);
 
             //act
-            calculator.Calculate();
+            double sum = calculator.Calculate();
 
-
-
-        }
-
-
-
-
-
+            //assert
+            Assert.Equal(6, sum);
 
 
         }
+
+
+
+
+
+
+
+        
     }
 }

@@ -46,7 +46,7 @@ namespace CG_14_2__Calculator_unit_testing_
         }
 
         //method to complete calculation of equation.
-        public void Calculate()
+        public double Calculate()
         {
             double answer = 0;
 
@@ -65,7 +65,7 @@ namespace CG_14_2__Calculator_unit_testing_
             //don't need an else statement, exceptions are
             //caught in the try/catch statement above.
 
-            Console.WriteLine($"Answer: {answer}");
+            return answer;
         }
 
     }

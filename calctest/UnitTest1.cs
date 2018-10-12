@@ -1,3 +1,4 @@
+using CG_14_2__Calculator_unit_testing_;
 using System;
 using Xunit;
 
@@ -17,6 +18,21 @@ namespace calctest
 
 
             [Fact]
+        public void Calculate_Addition_CorrectSum()
+        {
+            //arrange
+            string equation = "3 + 3";
+            Calculator calculator = new Calculator(equation);
+
+            //act
+            calculator.Calculate();
+
+
+
+        }
+
+
+
 
 
 

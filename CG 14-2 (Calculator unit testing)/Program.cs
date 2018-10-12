@@ -19,8 +19,8 @@ namespace CG_14_2__Calculator_unit_testing_
             //create new instance of calculator class using equation string as input.
             Calculator calculator = new Calculator(equation);
 
-            //initiate method from calculator class to calculate equation
-            calculator.Calculate();
+            //initiate method from calculator class to calculate equation and print to console
+            Console.WriteLine("Answer: {0}", calculator.Calculate());
 
 
             Console.ReadLine();

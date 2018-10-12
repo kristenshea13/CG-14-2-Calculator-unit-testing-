@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CG_14_2__Calculator_unit_testing_
 {
     public class Calculator
     {
-
         //properties for calculator class
         public double Number1 { get; set; }
+
         public double Number2 { get; set; }
         public string EqAction { get; set; }
-
 
         //separate equation string into elements to create instance of calculator class.
         public Calculator(string equation)
@@ -26,23 +23,17 @@ namespace CG_14_2__Calculator_unit_testing_
                 {
                     if (i == 0)
                         Number1 = int.Parse(equationSplit[i]);
-
                     else if (i == 1)
                         EqAction = equationSplit[i];
-
                     else
                         Number2 = int.Parse(equationSplit[i]);
-
                 }
             }
             //when user inputs equation incorrectly, it will tell them the equation is invalid.
             catch (Exception ex)
             {
                 throw new Exception("Invalid equation.", ex);
-
             }
-
-
         }
 
         //method to complete calculation of equation.
@@ -52,13 +43,10 @@ namespace CG_14_2__Calculator_unit_testing_
 
             if (EqAction == "+")
                 answer = Number1 + Number2;
-
             else if (EqAction == "-")
                 answer = Number1 - Number2;
-
             else if (EqAction == "*")
                 answer = Number1 * Number2;
-
             else if (EqAction == "/")
                 answer = Number1 / Number2;
 
@@ -67,17 +55,5 @@ namespace CG_14_2__Calculator_unit_testing_
 
             return answer;
         }
-
     }
-
-
-
-
-
-
-
-
-
-
-
 }

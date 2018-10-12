@@ -6,7 +6,6 @@ namespace calctest
 {
     public class UnitTest1
     {
-        
         //needed to test method addition, subtraction, multiplication, and division
         //also created tests that will fail (put incorrect answer in the Assert statement)
 
@@ -45,7 +44,6 @@ namespace calctest
         [Fact]
         public void Calculate_Subtraction_CorrectDifference()
         {
-
             //arrange
             string equation = "3 - 3";
             Calculator calculator = new Calculator(equation);
@@ -91,7 +89,7 @@ namespace calctest
 
         [Fact]
         public void Calculate_Division_IncorrectQuotient()
-        {   
+        {
             //incorrect answer, same thing as above but test will fail
             //arrange
             string equation = "6 / 3";
@@ -124,7 +122,6 @@ namespace calctest
         [Fact]
         public void Calculate_Multiplication_IncorrectProduct()
         {
-
             //tests incorrect answer, will fail
             //arrange
             string equation = "3 * 3";
@@ -167,7 +164,7 @@ namespace calctest
             //created to test properly input equation to make sure it won't
             //throw an exception.
             //arrange
-            
+
             string equation = "7 - 3";
 
             //act
@@ -186,6 +183,5 @@ namespace calctest
             //if formula is not entered correctly program will throw an exception.
             Assert.True(false);
         }
-
     }
 }
